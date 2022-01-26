@@ -1,0 +1,423 @@
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .iconeViolet {
+    color: #9356dc;
+  }
+
+  .iconeGris {
+    color: dimgrey;
+  }
+
+  .coeur2 {
+    display: none;
+  }
+
+  /****************************************************/
+  /*                      SPINNER                     */
+  /****************************************************/
+
+  .spinner {
+    height: 100%;
+    background: white;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    animation: spinner 2s linear;
+    visibility: hidden;
+  }
+
+  .spinner_border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid transparent;
+    border-top: 10px solid #9356dc;
+    border-bottom: 10px solid #ff79da;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: spinner-border 2s linear;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: spinner;
+    z-index: 10;
+    visibility: hidden;
+  }
+
+  .spinner_center {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #99e2d0;
+  }
+
+  /****************************************************/
+  /*                       HEADER                     */
+  /****************************************************/
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+    box-shadow: 3px 8px 8px #bfbfbf;
+  }
+
+  .logo {
+    width: 180px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .aligne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .localisation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    background-color: #e6e0e0;
+    border-radius: 0;
+    border: 0;
+  }
+
+  .localisation:hover {
+    cursor: pointer;
+  }
+
+  .separation {
+    gap: 15px;
+  }
+
+  /****************************************************/
+  /*                    RESERVATION                   */
+  /****************************************************/
+
+  .texteReservez {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+    font-size: 12px;
+  }
+
+  .texteReservez p {
+    font-size: 10px;
+  }
+
+  .texteBouton {
+    border-radius: 30px;
+    border: none;
+    width: 220px;
+    height: 50px;
+    margin: 20px 0 20px 0;
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    box-shadow: 3px 8px 8px #bfbfbf;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+
+  .texteBouton:hover {
+    cursor: pointer;
+  }
+
+  /****************************************************/
+  /*                  FONCTIONNEMENT                  */
+  /****************************************************/
+
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titreFonction {
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .groupeCarte {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .carte {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 3px 8px 8px #bfbfbf;
+  }
+
+  .carte:hover {
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.5s;
+    transform: scale(1.02);
+  }
+
+  .carte3 {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+    background-color: #eee3f3;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 3px 8px 8px #bfbfbf;
+  }
+
+  .carte3:hover {
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.5s;
+    transform: scale(1.02);
+  }
+
+  .numero {
+    background-color: #9356dc;
+    border-radius: 100%;
+    min-height: 1.3rem;
+    min-width: 1.3rem;
+    color: #fff;
+    display: flex;
+    font-size: 0.8em;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10px;
+  }
+
+  .iconeCarte {
+    margin-left: 20px;
+    color: #7d7d7d;
+  }
+
+  .carte p {
+    margin-left: 20px;
+    font-weight: 700;
+  }
+
+  .carte3 p {
+    margin-left: 20px;
+    font-weight: 700;
+  }
+
+  .iconeStore {
+    color: #9356dc;
+    margin-left: 20px;
+  }
+
+  /****************************************************/
+  /*                    RESTAURANTS                   */
+  /****************************************************/
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+  }
+
+  .titre_restaurant {
+    margin-left: 30px;
+  }
+
+  .colonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 60px;
+  }
+
+  .description {
+    width: 320px;
+    height: auto;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 3px 8px 8px #bfbfbf;
+  }
+
+  .description .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 11em;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+
+  .description h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.8em;
+    margin-top: 0.7em;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 800;
+  }
+
+  .description p {
+    margin-left: 0.8em;
+    margin-top: 0.3em;
+    font-size: 17px;
+  }
+
+  .description a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .description:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .fa-heart {
+    color: #fff;
+    background-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+  }
+
+  .fa-heart::before {
+    content: "\f004";
+    transition: 3s;
+  }
+
+  .fa-heart:hover::before {
+    cursor: pointer;
+    -webkit-text-stroke-width: 0px;
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#cb2ad3),
+      to(#333)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .nouveau {
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #00ffff;
+  }
+
+  .nouveau p {
+    font-size: 15px;
+    color: green;
+    margin-top: 8px;
+    margin-left: 20px;
+  }
+
+  /****************************************************/
+  /*                      FOOTER                      */
+  /****************************************************/
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+    padding: 0 40px;
+    background-color: #353535;
+    color: #fff;
+    height: 25vh;
+  }
+
+  .footer_titre {
+    font-family: "Shrikhand", cursive;
+    color: white;
+    font-size: 10px;
+    padding: 10px 15px 0 0px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  .footer_block {
+    display: flex;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 20px 40px;
+  }
+
+  .footer_block_ligne {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+    gap: 10px;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

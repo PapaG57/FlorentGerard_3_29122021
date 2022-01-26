@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/tablette.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+
+    <title>ohmyfood</title>
+    <script
+      src="https://kit.fontawesome.com/637f017d65.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SPINNER -->
+
+    <div class="loader flexcenter">
+      <div class="row justify-content-center">
+        <!-- Clock Loader -->
+        <div class="center">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+
+    <header>
+      <a href="index.html"
+        ><img class="logo" src="images/logo/ohmyfood.png" alt="logo de la page"
+      /></a>
+    </header>
+
+    <!-- LOCALISATION -->
+
+    <div class="localisation separation">
+      <i class="fas fa-map-marker-alt fa-lg"></i>
+      <h3>Paris, Belleville</h3>
+    </div>
+
+    <!-- RESERVATION -->
+
+    <div class="texteReservez">
+      <h1>Réservez le menu qui vous convient</h1>
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+      <button class="texteBouton">Explorer nos restaurants</button>
+    </div>
+
+    <!-- FONCTIONNEMENT -->
+
+    <section class="fonctionnement">
+      <div class="titreFonction">
+        <h2>Fonctionnement</h2>
+      </div>
+
+      <div class="groupeCarte">
+        <div class="carte">
+          <div class="numero">1</div>
+          <div class="iconeCarte">
+            <i class="fas fa-mobile-alt fa-lg"></i>
+          </div>
+          <p>Choisissez une restaurant</p>
+        </div>
+        <div class="carte">
+          <div class="numero">2</div>
+          <div class="iconeCarte">
+            <i class="fas fa-list-ul"></i>
+          </div>
+          <p>Composez votre menu</p>
+        </div>
+        <div class="carte3">
+          <div class="numero">3</div>
+          <div class="iconeStore">
+            <i class="fas fa-store"></i>
+          </div>
+          <p>Dégustez au restaurant</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESTAURANTS -->
+
+    <section class="restaurants">
+      <div class="titre_restaurant">
+        <h2>Restaurants</h2>
+      </div>
+      <div class="colonne">
+        <div class="description">
+          <div class="nouveau">
+            <p>Nouveau</p>
+          </div>
+          <a href="menus/la-palette-du-gout.html">
+            <img
+              class="images"
+              src="images/restaurants/La-Palette-du-gout.jpg"
+              alt="Restaurant la palette du gout"
+            />
+            <div class="description_texte">
+              <h3>
+                La palette du goût
+                <i class="fa fa-heart fa-lg"></i>
+              </h3>
+              <p>Ménilmontant</p>
+            </div>
+          </a>
+        </div>
+        <div class="description">
+          <div class="nouveau">
+            <p>Nouveau</p>
+          </div>
+          <a href="menus/la-note-enchantee.html">
+            <img
+              class="images"
+              src="images/restaurants/La-note-enchantee.jpg"
+              alt="Restaurant la palette du gout"
+            />
+            <div class="description_texte">
+              <h3>
+                La note enchantée
+                <i class="fa fa-heart fa-lg"></i>
+              </h3>
+              <p>Charonne</p>
+            </div>
+          </a>
+        </div>
+        <div class="description">
+          <a href="menus/a-la-francaise.html">
+            <img
+              class="images"
+              src="images/restaurants/A-la-francaise.jpg"
+              alt="Restaurant la palette du gout"
+            />
+            <div class="description_texte">
+              <h3>
+                Á la française
+                <i class="fa fa-heart fa-lg"></i>
+              </h3>
+              <p>Cité Rouge</p>
+            </div>
+          </a>
+        </div>
+        <div class="description">
+          <a href="menus/le-delice-des-sens.html">
+            <img
+              class="images"
+              src="images/restaurants/Le-delice-des-sens.jpg"
+              alt="Restaurant la palette du gout"
+            />
+            <div class="description_texte">
+              <h3>
+                Le délice des sens
+                <i class="fa fa-heart fa-lg"></i>
+              </h3>
+              <p>Folie-Méricourt</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer_titre">
+        <h1>ohmyfood</h1>
+      </div>
+      <div class="footer_block">
+        <div class="footer_block_ligne">
+          <i class="fas fa-utensils"></i>
+          <p>Proposer un restaurant</p>
+        </div>
+        <div class="footer_block_ligne">
+          <i class="fas fa-hands-helping fa-xs"></i>
+          <p>Devenir partenaire</p>
+        </div>
+        <div class="footer_block_ligne">
+          <p>Mentions légales</p>
+        </div>
+        <div class="footer_block_ligne">
+          <a href="mailto:contact@ohmyfood.fr">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

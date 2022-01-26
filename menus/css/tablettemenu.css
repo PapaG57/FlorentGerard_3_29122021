@@ -1,0 +1,21 @@
+@media screen and (max-width: 992px) {
+  .menu_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+  }
+
+  .menu_grid_bloc {
+    display: grid;
+    grid-gap: 15px;
+  }
+
+  .footer_titre {
+    margin-left: 50px;
+  }
+
+  .footer_block {
+    padding: 0;
+  }
+}

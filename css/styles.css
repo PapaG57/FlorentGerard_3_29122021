@@ -1,0 +1,422 @@
+/*****************************************************/
+/*Debut font, c'est à dire couleur texte, police ect.*/
+/*****************************************************/
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/****************************************************/
+/*                      SPINNER                     */
+/****************************************************/
+
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  inset: 0px;
+  background-color: rgb(8, 0, 0);
+  animation: clock 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  z-index: 3;
+}
+
+@keyframes clock {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*****************************************************/
+/*                       HEADER                      */
+/*****************************************************/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  box-shadow: 3px 8px 8px #bfbfbf;
+}
+
+header .logo {
+  width: 200px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  background-color: #e6e0e0;
+  border: solid #e5e2e2 1px;
+  height: 3em;
+}
+
+.localisation h3 {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.separation {
+  gap: 15px;
+}
+
+/*****************************************************/
+/*                    RESERVATION                    */
+/*****************************************************/
+
+.texteReservez {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border: solid #e5e2e2 1px;
+  padding: 50px 0;
+}
+
+.texteBouton {
+  border-radius: 30px;
+  border: none;
+  width: 220px;
+  height: 50px;
+  margin: 20px 0 20px 0;
+  background: linear-gradient(#ff79da, #6b1980);
+  box-shadow: 3px 8px 8px #bfbfbf;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/*****************************************************/
+/*                  FONCTIONNEMENT                   */
+/*****************************************************/
+
+.titreFonction {
+  margin-top: 20px;
+  margin-left: 190px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.groupeCarte {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.carte {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: 15px;
+  box-shadow: 3px 8px 8px #bfbfbf;
+}
+
+.carte:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px #9356dc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.carte3 {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  background-color: #eee3f3;
+  border-radius: 20px;
+  margin: 15px;
+  box-shadow: 3px 8px 8px #bfbfbf;
+}
+
+.carte3:hover {
+  transition: 1s;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px #9356dc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.numero {
+  background-color: #9356dc;
+  border-radius: 100%;
+  min-height: 1.3rem;
+  min-width: 1.3rem;
+  color: #fff;
+  display: flex;
+  font-size: 0.8em;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+}
+
+.iconeCarte {
+  margin-left: 20px;
+  color: #7d7d7d;
+}
+
+.carte p {
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.carte3 p {
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.iconeStore {
+  color: #9356dc;
+  margin-left: 20px;
+}
+
+/****************************************************/
+/*                    RESTAURANTS                   */
+/****************************************************/
+
+.restaurants {
+  background: #f6f6f6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titre_restaurant {
+  margin-top: 20px;
+  margin-left: 440px;
+}
+
+.colonne {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.description {
+  width: 320px;
+  height: auto;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  box-shadow: 3px 8px 8px #bfbfbf;
+}
+
+.description .images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 11em;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+.description h3 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  margin-top: 0.7em;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.description p {
+  margin-left: 0.8em;
+  margin-top: 0.3em;
+  font-size: 17px;
+}
+
+.description a {
+  color: #000;
+  text-decoration: none;
+}
+
+.description:hover {
+  transition: 0.5s;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 10px 2px #9356dc;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: #fff;
+  background-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: grey;
+}
+
+.fa-heart::before {
+  content: "\f004";
+  transition: 3s;
+}
+
+.fa-heart:hover::before {
+  cursor: pointer;
+  -webkit-text-stroke-width: 0px;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#cb2ad3),
+    to(#333)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nouveau {
+  position: absolute;
+  margin-left: 210px;
+  margin-top: 15px;
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: aqua;
+}
+
+.nouveau p {
+  font-size: 15px;
+  color: green;
+  margin-left: 20px;
+}
+
+.description_texte {
+  padding: 10px;
+}
+
+/****************************************************/
+/*                      FOOTER                      */
+/****************************************************/
+
+footer {
+  padding: 0 40px;
+  background-color: #353535;
+  color: #fff;
+  height: 20vh;
+}
+
+.footer_titre {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 10px;
+  padding: 15px 0;
+  margin-left: 270px;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 180px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer_block_ligne {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+  gap: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
