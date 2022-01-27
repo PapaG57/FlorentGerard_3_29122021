@@ -259,7 +259,7 @@
   /*                    VALIDATION                    */
   /****************************************************/
 
-  /*.dish-and-price {
+  .dish-and-price {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -280,7 +280,7 @@
       transform: scaleX(0);
     }
     100% {
-      transform: scaleX(-50);
+      transform: scaleX(-50px);
     }
   }
 

@@ -194,30 +194,15 @@ header .logo {
 }
 
 .carte:hover {
+  cursor: pointer;
+  background-color: #fff;
   transition: 0.5s;
   transform: scale(1.02);
-  box-shadow: 0px 0px 10px 2px #9356dc;
-  background-color: #fff;
-  cursor: pointer;
+  background-color: #e4d5f6;
 }
 
-.carte3 {
-  display: flex;
-  align-items: center;
-  width: 350px;
-  height: 50px;
-  background-color: #eee3f3;
-  border-radius: 20px;
-  margin: 15px;
-  box-shadow: 3px 8px 8px #bfbfbf;
-}
-
-.carte3:hover {
-  transition: 1s;
-  transform: scale(1.02);
-  box-shadow: 0px 0px 10px 2px #9356dc;
-  background-color: #fff;
-  cursor: pointer;
+.carte:hover i {
+  color: #9356dc;
 }
 
 .numero {
@@ -241,16 +226,6 @@ header .logo {
 .carte p {
   margin-left: 20px;
   font-weight: 700;
-}
-
-.carte3 p {
-  margin-left: 20px;
-  font-weight: 700;
-}
-
-.iconeStore {
-  color: #9356dc;
-  margin-left: 20px;
 }
 
 /****************************************************/

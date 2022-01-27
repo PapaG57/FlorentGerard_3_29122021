@@ -8,6 +8,7 @@
 
   .groupeCarte {
     display: flex;
+    align-items: center;
     margin-top: 10px;
     padding: 10px;
     gap: 5px;
@@ -31,22 +32,16 @@
     transform: scale(1.02);
   }
 
-  .carte3 {
-    display: flex;
-    align-items: center;
-    width: 350px;
-    height: 70px;
-    background-color: #eee3f3;
-    border-radius: 20px;
-    margin: 15px;
-    box-shadow: 3px 8px 8px #bfbfbf;
-  }
-
-  .carte3:hover {
+  .carte:hover {
     cursor: pointer;
     background-color: #fff;
     transition: 0.5s;
     transform: scale(1.02);
+    background-color: #e4d5f6;
+  }
+
+  .carte:hover i {
+    color: #9356dc;
   }
 
   .titre_restaurant {

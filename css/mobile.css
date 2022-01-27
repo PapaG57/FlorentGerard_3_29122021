@@ -207,24 +207,21 @@
     background-color: #fff;
     transition: 0.5s;
     transform: scale(1.02);
+    background-color: #e4d5f6;
   }
 
-  .carte3 {
-    display: flex;
-    align-items: center;
-    width: 350px;
-    height: 70px;
-    background-color: #eee3f3;
-    border-radius: 20px;
-    margin: 15px;
-    box-shadow: 3px 8px 8px #bfbfbf;
+  .carte:hover i {
+    color: #9356dc;
   }
 
-  .carte3:hover {
-    cursor: pointer;
-    background-color: #fff;
-    transition: 0.5s;
-    transform: scale(1.02);
+  .carte p {
+    margin-left: 20px;
+    font-weight: 700;
+  }
+
+  .iconeCarte {
+    margin-left: 20px;
+    color: #7d7d7d;
   }
 
   .numero {
@@ -238,26 +235,6 @@
     align-items: center;
     justify-content: center;
     margin-left: -10px;
-  }
-
-  .iconeCarte {
-    margin-left: 20px;
-    color: #7d7d7d;
-  }
-
-  .carte p {
-    margin-left: 20px;
-    font-weight: 700;
-  }
-
-  .carte3 p {
-    margin-left: 20px;
-    font-weight: 700;
-  }
-
-  .iconeStore {
-    color: #9356dc;
-    margin-left: 20px;
   }
 
   /****************************************************/
