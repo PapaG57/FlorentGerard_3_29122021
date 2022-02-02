@@ -8,13 +8,8 @@
     font-family: "Roboto", sans-serif;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin: 0;
-    padding: 0;
+  main {
+    width: 100%;
   }
 
   .iconeViolet {
@@ -33,54 +28,85 @@
   /*                      SPINNER                     */
   /****************************************************/
 
-  .spinner {
-    height: 100%;
-    background: white;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-    animation: spinner 2s linear;
-    visibility: hidden;
-  }
-
-  .spinner_border {
+  .center {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px solid transparent;
-    border-top: 10px solid #9356dc;
-    border-bottom: 10px solid #ff79da;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: spinner-border 2s linear;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: spinner;
-    z-index: 10;
-    visibility: hidden;
+    background: #000;
   }
 
-  .spinner_center {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #99e2d0;
+  .wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, #99e2d0, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+  }
+  .wave:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .wave:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .wave:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .wave:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .wave:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .wave:nth-child(7) {
+    animation-delay: 0.6s;
+  }
+  .wave:nth-child(8) {
+    animation-delay: 0.7s;
+  }
+  .wave:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+  .wave:nth-child(10) {
+    animation-delay: 0.9s;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+  .flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    inset: 0px;
+    background-color: rgb(8, 0, 0);
+    animation: clock 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    z-index: 3;
+  }
+
+  @keyframes clock {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
 
   /****************************************************/
@@ -88,18 +114,19 @@
   /****************************************************/
 
   header {
+    width: 100%;
+    height: 4em;
+    box-shadow: -1px 6px 10px #737373, 0px 0px 0px #737373;
+  }
+
+  header a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 4em;
-    box-shadow: 3px 8px 8px #bfbfbf;
   }
 
   .logo {
-    width: 180px;
-    height: auto;
-    margin-top: 10px;
+    width: 50%;
   }
 
   .aligne {
@@ -177,10 +204,10 @@
   }
 
   .titreFonction {
-    margin-top: 50px;
-    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    width: 38%;
     font-size: 16px;
-    font-weight: 100;
   }
 
   .groupeCarte {
@@ -341,7 +368,7 @@
     width: 100px;
     height: 30px;
     border-radius: 3px;
-    background-color: #00ffff;
+    background-color: #99e2d0;
   }
 
   .nouveau p {
@@ -362,7 +389,8 @@
     padding: 0 40px;
     background-color: #353535;
     color: #fff;
-    height: 25vh;
+    height: 30vh;
+    width: 80%;
   }
 
   .footer_titre {
@@ -379,7 +407,7 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 20px 20px 40px;
+    padding: 0 20px 20px 30px;
   }
 
   .footer_block_ligne {

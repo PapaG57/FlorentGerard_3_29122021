@@ -48,8 +48,16 @@
     margin-left: 140px;
   }
 
+  footer {
+    padding: 0;
+    width: 100%;
+  }
+
   .footer_titre {
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
   }
 
   .footer_block {

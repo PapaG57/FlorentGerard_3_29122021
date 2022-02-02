@@ -7,13 +7,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0;
-  padding: 0;
+main {
+  width: 100%;
 }
 
 /****************************************************/
@@ -31,7 +26,7 @@ h5 {
 .wave {
   width: 5px;
   height: 100px;
-  background: linear-gradient(45deg, cyan, #fff);
+  background: linear-gradient(45deg, #99e2d0, #fff);
   margin: 10px;
   animation: wave 1s linear infinite;
   border-radius: 20px;
@@ -109,12 +104,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 5em;
-  box-shadow: 3px 8px 8px #bfbfbf;
+  box-shadow: -1px 6px 10px #737373, 0px 0px 0px #737373;
 }
 
-header .logo {
-  width: 200px;
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
 }
 
 .localisation {
@@ -169,10 +171,10 @@ header .logo {
 /*****************************************************/
 
 .titreFonction {
-  margin-top: 20px;
-  margin-left: 190px;
+  display: flex;
+  justify-content: center;
+  width: 38%;
   font-size: 16px;
-  font-weight: 100;
 }
 
 .groupeCarte {
@@ -243,8 +245,10 @@ header .logo {
 }
 
 .titre_restaurant {
-  margin-top: 20px;
-  margin-left: 440px;
+  display: flex;
+  justify-content: flex-end;
+  width: 38%;
+  font-size: 16px;
 }
 
 .colonne {
@@ -265,7 +269,7 @@ header .logo {
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
-  box-shadow: 3px 8px 8px #bfbfbf;
+  box-shadow: -1px 6px 10px #737373, 0px 0px 0px #737373;
 }
 
 .description .images {
@@ -301,8 +305,6 @@ header .logo {
 
 .description:hover {
   transition: 0.5s;
-  transform: scale(1.02);
-  box-shadow: 0px 0px 10px 2px #9356dc;
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -340,7 +342,7 @@ header .logo {
   width: 100px;
   height: 30px;
   border-radius: 3px;
-  background-color: aqua;
+  background-color: #99e2d0;
 }
 
 .nouveau p {
@@ -362,14 +364,18 @@ footer {
   background-color: #353535;
   color: #fff;
   height: 20vh;
+  width: 100%;
 }
 
 .footer_titre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
   font-family: "Shrikhand", cursive;
   color: white;
   font-size: 10px;
   padding: 15px 0;
-  margin-left: 270px;
 }
 
 .footer_block {
